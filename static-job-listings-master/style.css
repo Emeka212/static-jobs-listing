@@ -1,0 +1,151 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background:  hsl(180, 29%, 50%);
+	font-family: Arial;
+	font-family: [Spartan](https://fonts.google.com/specimen/Spartan);
+	font-weight: 500, 700;
+	font-size: 15px;
+}
+.bg-header-desktop{
+	width: 100%;
+}
+.bg-header-mobile{
+	width: 100%;
+	display: none;
+}
+.body_section{
+	background: hsl(180, 52%, 96%);
+	width: 100%;
+	margin-top: -3px;
+	padding: 15px 0px 40px 0px;
+}
+.list{
+	position: relative;
+	width: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 0px 5px 5px 0px;
+	background: white;
+	padding:15px;
+	margin-top: 30px;
+	box-shadow: 0px 3px 10px 2px lightgray;
+}
+.list::after{
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	margin-left: -5px;
+	border-radius: 5px 0px 0px 5px;
+	background: hsl(180, 29%, 50%);
+}
+.list_head{
+	margin-left: 10px;
+	margin-top: 6px;
+}
+.nxt_div{
+	position: absolute;
+	top: 20px;
+	left: 150px;
+	line-height: 30px;
+}
+.first_subhead{
+	font-weight: bold;
+	color: hsl(180, 29%, 50%);
+}
+.second_subhead{
+	font-weight: normal;
+	font-size: 13px;
+	color: #fff;
+    background: hsl(180, 29%, 50%);
+    padding: 5px 8px 5px 8px;
+    border-radius: 50px;
+}
+.third_subhead{
+	font-weight: normal;
+	font-size: 13px;
+	color: #fff;
+    background: #000;
+    padding: 5px 8px 5px 8px;
+    border-radius: 50px;
+}
+.abt_txt{
+	font-weight: bolder;
+	color: hsl(180, 14%, 20%);
+	cursor: pointer;
+}
+.abt_txt:hover{
+	color: hsl(180, 29%, 50%);
+}
+.footer_txt{
+	color: hsl(180, 8%, 52%);
+	font-size: 15px;
+}
+.hr{
+	display: none;
+}
+.level_code_lng_used{
+	position: absolute;
+	right: 40px;
+	top: 58px;
+	color: hsl(180, 29%, 50%);
+	font-weight: bold;
+}
+.code_bg{
+	background: hsl(180, 52%, 96%);
+	padding: 5px;
+	margin-left: 15px;
+	border-radius: 5px;
+	border: 2px solid hsl(180, 31%, 95%);
+	cursor: pointer;
+}
+.code_bg:hover{
+	color: #fff;
+	background: hsl(180, 29%, 50%);
+	border: 2px solid hsl(180, 29%, 50%);
+}
+@media screen and (max-width: 1000px){
+	.bg-header-desktop{
+	width: 100%;
+	display: none;
+    }
+    .bg-header-mobile{
+	width: 100%;
+	display: block;
+    }
+    .body_section{
+    	margin-top: 0%;
+    }
+    .list{
+	width: 85%;
+	margin-top: 50px;
+    }
+    .list_head{
+	margin-left: 0px;
+	margin-top: -40px;
+    }
+    .list_head img{
+	width: 50px;
+	height: 50px;
+    }
+    .nxt_div{
+	position: relative;
+	top: 20px;
+	left: 0px;
+	line-height: 30px;
+    }
+    .hr{
+	display: block;
+	margin-top: 35px;
+    }
+    .level_code_lng_used{
+	position: relative;
+	right: 15px;
+	top: 0px;
+	margin-top: 10px;
+	line-height: 50px;
+    }
+}
